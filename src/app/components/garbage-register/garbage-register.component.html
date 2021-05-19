@@ -1,0 +1,51 @@
+<div class="container">
+  <div class="row">
+    <div class="col-3"></div>
+    <div class="col-6  text-center text-white" style="font-size: 120%">
+      <form action="">
+<!--        COUNTRY            -->
+        <br>
+        <label class="" for="countryId">Country:</label>
+        <br>
+        <select class="custom-select  w-100" id="countryId">
+          <option selected value="kz">Kazakhstan</option>
+          <option value="usa">USA</option>
+          <option value="turkey">Turkey</option>
+          <option value="italy">Italy</option>
+        </select>
+        <br>
+        <br>
+<!--        CITY                -->
+        <label class="w-100" for="cityId">City:</label>
+        <br>
+        <select class="custom-select w-100" id="cityId">
+          <option class="form-select" selected>Choose...</option>
+          <option value="{{city}}" *ngFor="let city of list">{{city}}</option>
+        </select>
+        <br>
+        <br>
+<!--        ADDRESS              -->
+        <div class="form-group">
+          <label for="addressGarbage">Address:</label>
+          <input type="text" class="form-control" id="addressGarbage"  placeholder="Enter address">
+        </div>
+        <br>
+<!--        РАЗМЕР МУСОРА -->
+        <div class="form-group">
+          <label for="sizeGarbage">Garbage size:</label>
+          <input type="text" class="form-control" id="sizeGarbage" placeholder="Enter size">
+        </div>
+        <br>
+        <!--         -->
+        <div class="form-group">
+          <label for="phoneNumber">Phone number:</label>
+          <input type="text" class="form-control" id="phoneNumber" placeholder="(XXX)XXX-XXXX">
+        </div>
+        <br>
+        <br>
+      </form>
+    </div>
+    <div class="col-3"></div>
+
+  </div>
+</div>

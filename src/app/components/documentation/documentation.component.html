@@ -1,0 +1,100 @@
+<div style="background-color: black; color: white">
+    <div class="container" style="opacity: 0.8;">
+      <div class="row">
+        <div class="col">
+          <div class="text-center" style="font-size: 150%">
+
+            <br>
+            <p>Green Technology and Economics</p>
+            <p>Garbage Monitoring</p>
+            <i>(Coursework)</i>
+
+          </div>
+          <div>
+            <h4>Plan</h4>
+            <p>
+              1. Introduction
+              <br>
+              2. Overview of garbage monitoring
+              <br>
+              3. The basic Model works like so...
+              <br>
+              4. Indicate on the map (Where and volume)
+            </p>
+            <br>
+          </div>
+          <p><strong style="font-size: 130%">I. Introduction</strong>
+            <br>
+            We are living in an age where tasks and systems are fusing together with the power of IOT to have a more efficient system of working and to execute jobs quickly! With all the power at our finger tips this is what we have come up with.
+
+            The Internet of Things (IoT) shall be able to incorporate transparently and seamlessly a large number of different systems, while providing data for millions of people to use and capitalize. Building a general architecture for the IoT is hence a very complex task, mainly because of the extremely large variety of devices, link layer technologies, and services that may be involved in such a system.
+
+            One of the main concerns with our environment has been solid waste management which impacts the health and environment of our society. The detection, monitoring and management of wastes is one of the primary problems of the present era. The traditional way of manually monitoring the wastes in waste bins is a cumbersome process and utilizes more human effort, time and cost which can easily be avoided with our present technologies.
+
+            This is our solution, a method in which waste management is automated. This is our IoT Garbage Monitoring system, an innovative way that will help to keep the cities clean and healthy.
+
+            Follow on to see how you could make an impact to help clean your community, home or even surroundings, taking us a step closer to a better way of living : )
+          </p>
+
+          <p><strong style="font-size: 130%">II. OVERVIEW of the Monitoring System</strong>
+            The idea struck us when we observed that the garbage truck use to go around the town to collect solid waste twice a day. Although this system was thorough it was very inefficient. For example let's say street A is a busy street and we see that the garbage fills up really fast whereas maybe street B even after two days the bin isn't even half full. This example is something that actually happens thus it lead us to the ''Eureka'' moment!
+            What our system does is it gives a real time indicator of the garbage level in a trashcan at any given time. Using that data we can then optimize waste collection routes and ultimately reduce fuel consumption. It allows trash collectors to plan their daily/weekly pick up schedule.
+          </p>
+          <p><strong style="font-size: 130%">III. The basic Model works like so...</strong>
+            To start with you will first have to enter the height of the dustbin. This will help us generate the percentage of trash in the trashcan. We then have two criterias which needs to be satisfied to show that the particular bin needs to be emptied :
+
+            The amount of trash, in other words let's say if your bin is half full you don't really need to empty it. Our thresh, or maximum amount that we permit of trash, is 75% of the bin. (You could alter the thresh according to your preference.)
+            If supposing a particular trashcan fills up 20% and then for a week doesn't change, it comes into our second criteria, time. With time even the little amount will start rotting leading to a smelly surrounding. To avoid that our tolerance level is 2 days, so if a trashcan is less than 75% but it is two days old it then will also need to be emptied.
+            With these criterias in mind let's understand the technical part:
+
+            An ultrasonic sensor (A.K.A a distance sensor) will be placed on the interior side of the lid, the one facing the solid waste. As trash increases, the distance between the ultrasonic and the trash decreases. This live data will be sent to our micro-controller.
+            Our micro- controller then processes the data and through the help of WiFi sends it to an app.
+            What the app does it visually represents the amount of trash in the bin with a small animation.
+            This process will indicate all the bins which require attention, leading the user to take the most effective route.
+            In modern public utilities, a whole range of measures is provided for the collection, processing, utilization and disposal of household waste. Waste management activities include waste sorting, recycling of some of the household waste, composting, waste incineration, and deep transformation. Ultimately, all these measures should help to reduce the amount of waste to be disposed of.
+            According to the World Bank, every year humanity produces just over 2 billion tons of municipal solid waste (MSW). By 2050, this figure threatens to rise to 3.4 billion tons. Countries deal with the problem differently. For example, in Japan, the population independently disassembles garbage into dozens of categories, the inhabitants of India are just learning not to throw it out just on the street, and Italian cities now and then find themselves on the verge of garbage collapse.
+            The problem of waste disposal is especially relevant in cities. When trash is sorted correctly, it becomes a source of raw materials that can be reused. For example, from biowaste - foliage, herbs, peels of vegetables and fruits, etc. - make fertilizers for plants or use them for biogas production. And valuable metals are extracted from old household appliances: gold, silver, copper or aluminum. Old furniture, clothing and plastic are also used as recyclable materials.
+            Large cities consume enormous amounts of energy. It is needed in industrial production, infrastructure, households: for heating, electricity, mobility. Garbage in all of this can replace non-renewable energy sources. One example is the biogas already mentioned above. Another example: energy generated from waste processing
+            is used for heating households. This technology was successfully mastered in Copenhagen.
+            95 percent of plastic packaging is for single use. A third of it ends up in the sea and on land, polluting the environment. Experts from the Ellen MacArthur Foundation have calculated that by 2050, if the situation does not change, there will be more plastic than fish in the oceans.
+            Garbage that is difficult and costly to dispose of includes special types of plastic. Such plastic is used, for example, in disposable packaging, plastic cups, bags in supermarkets or cocktail tubes are made from it. It consists of approximately 95 percent of the disposable packaging material. In Europe, they plan to completely abandon all this. Instead of plastic bags, supermarkets offer paper bags. Disposable tableware disappears from sale. It is replaced with dishes made of other materials.
+            A third of all food products produced, according to the UN, are not used. Most of them deteriorate during transportation and storage. Tons of food end up in trash cans every day: these are not only those products that were not bought in the store, but also those that turned out to be too much in the plate and in the refrigerator. In this case, experts say, you need to be guided by the well-known principle: less is better.
+            In the modern world, in order to avoid pollution and to recycle more waste, special trash bins have been created, which are divided into compartments. They can be observed in offices and enterprises, even in ordinary residential buildings.
+            Office rubbish is very diverse. Most of it is usually made up of paper, cardboard and plastic. The key principle that it is advisable to adhere to in this case is that a container for separate collection of garbage in the office should be compact, functional and, being in the room, organically fit into the interior. This also means certain design requirements for capacity. Modern models of such office bins look very modern and elegant. If we are talking about office premises, then it is advisable to install at least 2 garbage cans in them - one for recyclable and the other for mixed waste (food plastic, food waste, tea bags, etc.), so as not to contaminate recyclable materials.
+            The question of how to organize separate waste collection at an enterprise is relevant for almost any business entity. For the primary accumulation of separately collected waste, it is advisable to install blocks of colored urns at the enterprise. For the accumulation of a transport consignment of waste, containers made of high-strength plastic with a volume of 120 to 1100 liters (depending on the scale of the enterprise and the volume of waste produced) are optimal. It also makes sense to equip containers with a special press for compaction of garbage, which, when removed, will allow loading much larger volumes. Waste management specialists recommend in this case to install at least 3 colored containers.
+            But such garbage cans have not yet been introduced in the streets of the courtyards of residential buildings. Accordingly, small garbage cans fill up very quickly, especially in areas where there is a lot of traffic. The presence of trash cans does not guarantee that there will be no contamination. All this leads to the fact that garbage is simply carried through the air, polluting the environment. Especially in the peripheral areas of even large cities of Kazakhstan, the following picture is often observed: the absence of tanks and even if available, garbage collection is emphasized in the city center.
+            Also, due to the lack of garbage cans, garbage is thrown into small tanks with water or into drainage water, which creates blockages. During the rainy season, these blockages damage the water system and then the water overflows over the roads. In some areas, overflow water blocks all transport routes or small floods occur within the city. Open rubbish bins pose problems for people living in the area as they become a breeding ground for insects such as mosquitoes, germs, etc., which spread many diseases. These open waste areas create unsanitary conditions in these areas.
+
+            In many of these areas, trash cans are not emptied at regular intervals, which means they are not being cleaned properly. To avoid this, intelligent waste management and monitoring systems should be implemented.
+            Waste bin management systems have been developed and one of them is  Smart Garbage Bins.
+            IoT  or  Internet  Things  refers  to  the  network  of  connected  physical  objects  that  can
+            communicate and exchange data among themselves without the desideratum of any human
+            intervention.  It  has  been  formally  defined  as  an  “Infrastructure  of  Information  Society”
+            because IoT sanctions us to amass information from all kind of mediums such as humans,
+            animals, conveyances, kitchen appliances. Thus, any object in the physical world which can
+            be provided with an IP address to enable data transmission over a network can be made part
+            of IoT system by embedding them with electronic hardware such as  sensors, software and
+            networking gear. IoT is different than Internet as in a way it transcends Internet connectivity
+            by enabling  everyday objects  that utilizes embedded  circuits to interact  and communicate
+            with each other utilizing the current Internet infrastructure.
+            The Internet of Things (IoT) is shaping and touching our lives in every sphere. IoT based garbage monitoring system is an innovative project idea for maintaining the clean environment of the city. The smart garbage bins have Ultrasonic Sensors placed on the lid which detects the garbage level in the bins. By this, the garbage bins can be monitored and the monitoring information can be obtained through the webpage. The level of the garbage is compared with the depth of the bins. This system comprises of an AVR family Microcontroller, Wi-fi modem, LCD display along with a buzzer & also a 12V transformer associated with it.
+            The Wi-fi modem is used to send the data. The garbage status will be shown on the webpage. The level of the garbage collected in the bins will be shown on the LCD display. The webpage is quite useful, as the information is displayed in graphical representation & the garbage level will be displayed in different colors. The bins have been set with a limit after the garbage overflows the set limit the buzzer gets pressed which further sends alert to the user to empty the bin. The graphical representation is provided by the platform of IoT Gecko web development.
+          </p>
+          <br>
+          <h4>References</h4>
+          <p>
+            <br> <a href="https://www.instructables.com/Smart-Garbage-Monitoring-System-Using-Internet-of-/">Resource 1</a>
+            <br> <a href="https://yandex.kz/images/search?from=tabbar&text=Garbage%20Monitoring">Resource 2</a>
+            <br> <a href="https://yandex.kz/images/search?from=tabbar&text=smile%20dark&p=4&pos=196&rpt=simage&img_url=https%3A%2F%2Fsun1-47.userapi.com%2Fimpf%2Fc627426%2Fv627426666%2F1c9af%2Frrt8Qj6wadk.jpg%3Fsize%3D480x583%26quality%3D96%26proxy%3D1%26sign%3Dbd295c1de68b5b9490cc7816b595bcca">Resource 3</a>
+
+          </p>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+        </div>
+      </div>
+    </div>
+</div>

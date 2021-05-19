@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "garbage"
+    }
+  },
+  "defaultProject": "garbage",
+  "cli": {
+    "analytics": false
+  }
 }
