@@ -23,8 +23,8 @@ export class GarbageRegisterComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  createGarbagePoint(garbage: Garbage, phoneNumber: number): Observable<any>{
-    return this.garbageService.createGarbagePoint(garbage, phoneNumber);
+  createGarbagePoint(garbage: Garbage): Observable<any>{
+    return this.garbageService.createGarbagePoint(garbage);
   }
 
 }
