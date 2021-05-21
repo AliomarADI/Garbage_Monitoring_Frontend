@@ -9,6 +9,7 @@ import { HomeComponent } from './components/home/home.component';
 import { GarbageRegisterComponent } from './components/garbage-register/garbage-register.component';
 import { DocumentationComponent } from './components/documentation/documentation.component';
 import { PresentationComponent } from './components/presentation/presentation.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,10 +21,11 @@ import { PresentationComponent } from './components/presentation/presentation.co
     DocumentationComponent,
     PresentationComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        FormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
