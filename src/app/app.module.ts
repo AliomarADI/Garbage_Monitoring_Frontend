@@ -10,6 +10,7 @@ import { GarbageRegisterComponent } from './components/garbage-register/garbage-
 import { DocumentationComponent } from './components/documentation/documentation.component';
 import { PresentationComponent } from './components/presentation/presentation.component';
 import {FormsModule} from '@angular/forms';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import {FormsModule} from '@angular/forms';
     PresentationComponent
   ],
     imports: [
+        HttpClientModule,
         BrowserModule,
         AppRoutingModule,
         FormsModule

@@ -1,5 +1,5 @@
 import {Component, Injectable, OnInit} from '@angular/core';
-import {Garbage} from '../../model/garbage';
+import {GarbagePoint} from '../../model/garbagePoint';
 import {GarbageService} from '../../service/garbageService';
 import {Observable} from 'rxjs';
 
@@ -14,17 +14,23 @@ import {Observable} from 'rxjs';
 
 export class GarbageRegisterComponent implements OnInit {
   kz = [`Almaty` , `Astana` , `Kyzylorda` , `Shymkent`];
+  usa = [`Almaty` , `Astana` , `Kyzylorda` , `Shymkent`];
+  turkey = [`Almaty` , `Astana` , `Kyzylorda` , `Shymkent`];
+  italy = [`Almaty` , `Astana` , `Kyzylorda` , `Shymkent`];
 
   constructor(private garbageService: GarbageService) { }
 
-  garbage: Garbage;
+  garbage: GarbagePoint = new GarbagePoint(null,"","","","","",null);
   phoneNumber: number;
 
   ngOnInit(): void {
   }
 
-  createGarbagePoint(garbage: Garbage): Observable<any>{
-    return this.garbageService.createGarbagePoint(garbage);
+  createGarbagePoint(garbage: GarbagePoint){
+    console.log(garbage)
+    this.garbageService.createGarbagePoint(garbage).subscribe(value => {
+      garbage = value;
+    });
   }
 
 }

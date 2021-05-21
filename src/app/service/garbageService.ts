@@ -1,27 +1,30 @@
-import {HttpClient} from '@angular/common/http';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
 import {Observable} from 'rxjs';
-import {Garbage} from '../model/garbage';
+import {GarbagePoint} from '../model/garbagePoint';
+import { Injectable } from '@angular/core';
 
+@Injectable({
+  providedIn: 'root',
+})
 
 export class GarbageService{
 
-  url: 'localhost:/8080/';
-
-  constructor(private  http: HttpClient) {}
+  url="/api";
+  constructor(private http: HttpClient ) {}
 
   getGarbagePointsByUserId(userId: number): Observable<any>{
-    return this.http.get(`localhost:8080/garbages/${userId}`);
+    return this.http.get(this.url+`+/garbages/${userId}`);
   }
 
-  createGarbagePoint(garbage: Garbage): Observable<any>{
-    return this.http.post(`localhost:8080/createGarbagePoint`, garbage);
+  createGarbagePoint(garbage: GarbagePoint): Observable<any>{
+    return this.http.post(this.url+`/createGarbagePoint`, garbage);
   }
 
   deleteGarbagePoint(id: number): Observable<any>{
-    return this.http.delete(`localhost:8080/delete/${id}`);
+    return this.http.delete(this.url+`/delete/${id}`);
   }
 
   getUserById(id: number): Observable<any>{
-    return this.http.get(`localhost:8080/users/${id}`);
+    return this.http.get(this.url+`/users/${id}`);
   }
 }
