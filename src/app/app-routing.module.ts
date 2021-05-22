@@ -4,13 +4,15 @@ import {HomeComponent} from './components/home/home.component';
 import {GarbageRegisterComponent} from './components/garbage-register/garbage-register.component';
 import {DocumentationComponent} from './components/documentation/documentation.component';
 import {PresentationComponent} from './components/presentation/presentation.component';
+import {GarbagePointsComponent} from "./components/garbage-points/garbage-points.component";
 
 const routes: Routes = [
   {path: '' , component: HomeComponent},
   {path: 'home' ,  component: HomeComponent},
-  {path: 'regGar', component: GarbageRegisterComponent},
-  {path: 'doc', component: DocumentationComponent},
-  {path: 'preza', component: PresentationComponent}
+  {path: 'register', component: GarbageRegisterComponent},
+  {path: 'documentation', component: DocumentationComponent},
+  {path: 'presentation', component: PresentationComponent},
+  {path: 'points', component: GarbagePointsComponent}
 ];
 
 @NgModule({

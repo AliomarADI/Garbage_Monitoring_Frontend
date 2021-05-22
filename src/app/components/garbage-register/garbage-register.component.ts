@@ -13,14 +13,14 @@ import {Observable} from 'rxjs';
 })
 
 export class GarbageRegisterComponent implements OnInit {
-  kz = [`Almaty` , `Astana` , `Kyzylorda` , `Shymkent`];
-  usa = [`Almaty` , `Astana` , `Kyzylorda` , `Shymkent`];
-  turkey = [`Almaty` , `Astana` , `Kyzylorda` , `Shymkent`];
-  italy = [`Almaty` , `Astana` , `Kyzylorda` , `Shymkent`];
-
+  kz = [`Almaty` , `Astana` , `Kyzylorda` , `Astana`];
+  usa = [`New York` , `California` , `Florida` , `Shymkent`];
+  turkey = [`Ankara` , `Istanbul` , `Bodrum` , `Efes`];
+  italy = [`Rome` , `Milan` , `Pisa` , `Lucca`];
+  cities = [];
   constructor(private garbageService: GarbageService) { }
 
-  garbage: GarbagePoint = new GarbagePoint(null,"","","","","",null);
+  garbage: GarbagePoint = new GarbagePoint(null,"","","","","");
   phoneNumber: number;
 
   ngOnInit(): void {

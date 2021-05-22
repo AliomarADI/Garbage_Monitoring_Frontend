@@ -12,8 +12,8 @@ export class GarbageService{
   url="/api";
   constructor(private http: HttpClient ) {}
 
-  getGarbagePointsByUserId(userId: number): Observable<any>{
-    return this.http.get(this.url+`+/garbages/${userId}`);
+  getGarbagePointsByUserId(userId: string): Observable<any>{
+    return this.http.get(this.url+`/garbages?number=`+userId);
   }
 
   createGarbagePoint(garbage: GarbagePoint): Observable<any>{

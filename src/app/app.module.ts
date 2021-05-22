@@ -11,6 +11,7 @@ import { DocumentationComponent } from './components/documentation/documentation
 import { PresentationComponent } from './components/presentation/presentation.component';
 import {FormsModule} from '@angular/forms';
 import {HttpClientModule} from "@angular/common/http";
+import { GarbagePointsComponent } from './components/garbage-points/garbage-points.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import {HttpClientModule} from "@angular/common/http";
     HomeComponent,
     GarbageRegisterComponent,
     DocumentationComponent,
-    PresentationComponent
+    PresentationComponent,
+    GarbagePointsComponent
   ],
     imports: [
         HttpClientModule,

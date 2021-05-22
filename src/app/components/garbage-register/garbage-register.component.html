@@ -2,8 +2,8 @@
   <div class="row">
     <div class="col-3"></div>
     <ng-form>
-    <div class="col-6  text-center text-white" style="font-size: 120%">
-<!--        COUNTRY            -->
+      <div class="col-6  text-center text-white" style="font-size: 120%">
+        <!--        COUNTRY            -->
         <br>
         <label class="" for="countryId">Country:</label>
         <br>
@@ -15,38 +15,54 @@
         </select>
         <br>
         <br>
-<!--        CITY                -->
+        <!--        CITY                -->
         <label class="w-100" for="cityId">City:</label>
         <br>
-        <select [(ngModel)]="garbage.city" name="name_city" class="custom-select w-100" id="cityId">
+        <select *ngIf="garbage.country=='kz'" [(ngModel)]="garbage.city" name="name_city" class="custom-select w-100" id="cityId">
           <option class="form-select" selected>Choose...</option>
           <option value="{{city}}" *ngFor="let city of kz">{{city}}</option>
         </select>
+        <select *ngIf="garbage.country=='italy'" [(ngModel)]="garbage.city" name="name_city" class="custom-select w-100" id="cityId">
+          <option class="form-select" selected>Choose...</option>
+          <option value="{{city}}" *ngFor="let city of italy">{{city}}</option>
+        </select>
+        <select *ngIf="garbage.country=='turkey'" [(ngModel)]="garbage.city" name="name_city" class="custom-select w-100" id="cityId">
+          <option class="form-select" selected>Choose...</option>
+          <option value="{{city}}" *ngFor="let city of turkey">{{city}}</option>
+        </select>
+        <select *ngIf="garbage.country=='usa'" [(ngModel)]="garbage.city" name="name_city" class="custom-select w-100" id="cityId">
+          <option class="form-select" selected>Choose...</option>
+          <option value="{{city}}" *ngFor="let city of usa">{{city}}</option>
+        </select>
+
         <br>
         <br>
-<!--        ADDRESS              -->
+        <!--        ADDRESS              -->
         <div class="form-group">
           <label for="addressGarbage">Address:</label>
-          <input [(ngModel)]="garbage.address" name="name_address" type="text" class="form-control" id="addressGarbage"  placeholder="Enter address">
+          <input [(ngModel)]="garbage.address" name="name_address" type="text" class="form-control" id="addressGarbage"
+                 placeholder="Enter address">
         </div>
         <br>
-<!--        РАЗМЕР МУСОРА -->
+        <!--        РАЗМЕР МУСОРА -->
         <div class="form-group">
           <label for="sizeGarbage">Garbage size:</label>
-          <input [(ngModel)]="garbage.size" name="name_size" type="text" class="form-control" id="sizeGarbage" placeholder="Enter size">
+          <input [(ngModel)]="garbage.size" name="name_size" type="text" class="form-control" id="sizeGarbage"
+                 placeholder="Enter size">
         </div>
         <br>
         <!--         -->
         <div class="form-group">
           <label for="phoneNumber">Phone number:</label>
-          <input [(ngModel)]="garbage.userPhoneNumber" name="name_phoneNumber" type="text" class="form-control" id="phoneNumber" placeholder="(XXX)XXX-XXXX">
+          <input [(ngModel)]="garbage.userPhoneNumber" name="name_phoneNumber" type="text" class="form-control"
+                 id="phoneNumber" placeholder="(XXX)XXX-XXXX">
         </div>
         <br>
         <br>
 
         <button type="submit" class="btn btn-success" (click)="createGarbagePoint(garbage)">Send</button>
 
-    </div>
+      </div>
     </ng-form>
     <div class="col-3"></div>
 
