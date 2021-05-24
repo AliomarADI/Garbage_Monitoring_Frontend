@@ -1,0 +1,36 @@
+<div class="bg-dark" style="opacity: 0.9;height: 100vh;width: 100vw">
+  <div class="container">
+  <div class="row">
+    <div class="col-3"></div>
+    <ng-form>
+      <div class="col-6  text-center text-white" style="font-size: 120%">
+        <div class="form-group">
+          <label for="phoneNumber">Phone number:</label>
+          <input [(ngModel)]="phoneNumber" name="name_phoneNumber" type="text" class="form-control"
+                 id="phoneNumber" placeholder="(XXX)XXX-XXXX">
+        </div>
+        <br>
+        <button type="submit" class="btn btn-success" (click)="getAllByUserNumber(phoneNumber)">Check</button>
+      </div>
+      <br>
+    </ng-form>
+
+    <div *ngIf="points!=null">
+      <div *ngFor=" let point of points " style="display: inline-flex; margin-left: 10px ">
+        <div>
+          <div class="card border-primary mb-3" style="max-width: 18rem;">
+            <div class="card-header">{{point.country}}</div>
+            <div class="card-body text-primary">
+              <h5 class="card-title">{{point.city}}</h5>
+              <p class="card-text">Address:{{point.address}}</p>
+              <p class="card-text">Size:{{point.size}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<app-footer></app-footer>
+</div>
